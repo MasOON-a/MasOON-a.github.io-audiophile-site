@@ -1,0 +1,59 @@
+.home-page-head {
+    height: 800px;
+    display: flex;
+    align-items: center;
+    background-image: url(../assets/assets/home/desktop/image-hero.jpg);
+    background-position-x: center;
+    background-size: cover;
+}
+.home-page-head .background{
+    position: absolute;
+    width: 100%;
+    min-width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+.home-page-head .info-cont{
+    width: 60%;
+    padding: 2rem 12%;
+}
+.info-cont h4{
+    color: white;
+    opacity: 50%;
+    font-size: 13px;
+    letter-spacing: 9px;
+    text-transform: uppercase;
+}
+.info-cont h2{
+    font-size: 56px;
+    text-transform: uppercase;
+    color: white;
+}
+.info-cont p{
+    color: white;
+    opacity: 75%;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1100px){
+    .home-page-head {
+        background-image: url(../assets/assets/home/tablet/image-header.jpg);
+    }
+    .home-page-head .info-cont{
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 2rem 8%;
+    }
+}
+@media screen and (max-width: 600px){
+    .home-page-head{
+        background-image: url(../assets/assets/home/mobile/image-header.jpg);
+    }
+    .home-page-head .info-cont {
+        width: 100%;
+    }
+    .info-cont h2{
+        font-size: 32px;
+    }
+}

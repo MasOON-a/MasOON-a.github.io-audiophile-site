@@ -1,0 +1,122 @@
+.product-profile-cont{
+    padding: 2rem 12%;
+}
+.product-profile-cont h2{
+    font-size: 40px;
+}
+.product-profile-cont h3{
+    font-size: 32px;
+}
+.product-bio-cont{
+    display: flex;
+    margin-bottom: 6rem;
+}
+.product-bio-cont picture {
+    width: 45%;
+}
+.product-bio-cont picture img{
+    width: 100%;
+    border-radius: .5rem;
+}
+.product-bio-cont .product-bio{
+    width: 35%;
+    margin: auto;
+}
+.product-bio-cont .product-bio h4 {
+    color: hsl(22, 65%, 57%);
+    font-size: 13px;
+    letter-spacing: 9px;
+    text-transform: uppercase;
+}
+.product-bio-cont .product-bio h2, .description{
+    margin-bottom: 2rem;
+}
+.product-bio-cont .product-bio .cart-controls{
+    display: flex;
+    margin-top: 2rem;
+}
+.cart-controls .num-item{
+    display: flex;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+    margin-right: 2rem;
+}
+.cart-controls .num-item p, i{
+    padding: .75rem 1rem;
+    transition: 150ms ease;
+}
+.cart-controls .num-item i:hover{
+    color: hsl(22, 65%, 57%);
+}
+
+.product-indepth{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    line-height: 1.75;
+}
+.product-indepth li, .product-indepth p{
+    opacity: .85;
+}
+.product-indepth h3{
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.included-cont{
+    width: fit-content;
+    margin: 0 auto;
+}
+.product-indepth ul{
+    list-style: none;
+}
+.product-indepth ul li{
+    margin-bottom: .5rem;
+}
+.product-indepth ul strong{
+    color:hsl(22, 65%, 57%);
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: 1150px){
+    .product-profile-cont{
+        padding: 2rem 8%;
+    }
+    .product-bio-cont picture {
+        width: 45%;
+    }
+    .product-bio-cont .product-bio{
+        width: 45%;
+    }
+
+    .product-indepth{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+    }
+    .product-indepth .included-cont{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4rem;
+    }
+    .product-indepth ul{
+        margin: 0 15% 0 0 ;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .product-bio-cont{
+        flex-direction: column;
+    }
+    .product-bio-cont .product-bio{
+        width: 100%;
+    }
+    .product-bio-cont picture {
+        width: 100%;
+    }
+    .product-bio picture img {
+        width: 100%;
+    }
+    .product-indepth .included-cont{
+        flex-direction: column;
+    }
+}

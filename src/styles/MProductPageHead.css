@@ -1,0 +1,15 @@
+.page-head{
+    width: 100%;
+    color: white;
+    background-color: black;
+    padding: 10rem 0 5rem;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase
+}
+
+@media screen and (max-width: 800px){
+    .page-head{
+        padding: 6rem 0 5rem;
+    }
+}

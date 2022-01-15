@@ -1,0 +1,193 @@
+.master-cont{
+    height: 1300px;
+    padding: 3rem 12%;
+    background-color: hsl(0, 0%, 95%);
+}
+.master-cont abbr {
+    text-decoration: none;
+}
+.master-cont h3{
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.master-cont h4{
+    color: hsl(22, 65%, 57%);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 3rem 0 1.5rem;
+}
+.master-cont label {
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+.master-cont .large{
+    width: 100% !important;
+}
+.master-cont input[type ='text'], .master-cont input[type='email']{
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: .5rem;
+    border: 2px solid hsl(0, 0%, 70%);
+    appearance: none;
+}
+.master-cont input[type='text']:focus, .master-cont input[type='email']:focus{
+    border: 2px solid hsl(22, 65%, 57%);
+    outline: none;
+    caret-color: hsl(22, 65%, 57%);
+}
+.invalid, .invalid:focus{
+    border: 2px solid red !important;
+}
+.checkout{
+    width: 65%;
+    float: left;
+    background-color: white;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+.billing, .shipping, .ePay-note{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.billing > div, .shipping > div, .ePay-note > div{
+    width: 47.5%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.payment .payment-method{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.payment .payment-method .option-cont{
+    width: 47.5%;
+    display: flex;
+    flex-direction: column;
+}
+.payment-method label{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    border: 1px solid hsl(0, 0%, 70%);
+    cursor: pointer;
+}
+.payment-method .payment-option input{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 8px;
+    border: 1px solid hsl(0, 0%, 70%);
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.payment-method .clicked{
+    border: 1px solid hsl(22, 65%, 57%);
+}
+.payment-method .clicked input{
+    background-color: hsl(22, 65%, 57%);
+    border: none;
+}
+.cash-note{
+    opacity: .75;
+}
+
+.summary{
+    width: 32%;
+    float: right;
+    background-color: white;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+.summary .cart-display {
+    flex-direction: column;
+}
+.cart-display .sum-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.cart-display .sum-item .img-cont {
+    width: 80px;
+    min-width: 80px;
+    height: 80px;
+    overflow: hidden;
+}
+.cart-display .sum-item .img-cont img {
+    width: 100%;
+    border-radius: .5rem;
+}
+.cart-display .sum-item .main-cont {
+    flex: 1;
+    margin: 0 1rem;
+}
+.cart-display .sum-item .main-cont span{
+    opacity: .6;
+}
+.cart-display .sum-item .num-cont {
+    opacity: .6;
+}
+.summary > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.summary > div h5{
+    text-transform: uppercase;
+    opacity: .6;
+}
+.summary > div .o{
+    color: hsl(22, 65%, 57%);
+}
+.summary .btn-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.summary .btn-cont .btn1{
+    width: 100%;
+}
+
+@media screen and (max-width: 1100px){
+    .master-cont{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 8%;
+    }
+    .checkout{
+        width: 100%;
+        float: unset;
+        margin-bottom: 2rem;
+    }
+    .summary{
+        width: 100%;
+        float: unset;
+    }
+}
+@media screen and (max-width: 600px){
+    .billing, .shipping, .ePay-note{
+        flex-direction: column;
+    }
+    .billing > div, .shipping > div, .ePay-note > div{
+        width: 100%;
+    }
+    .payment .payment-method{
+        flex-direction: column;
+    }
+    .payment .payment-method h5{
+        margin-bottom: 1rem;
+    }
+    .payment .payment-method .option-cont{
+        width: 100%;
+    }
+}

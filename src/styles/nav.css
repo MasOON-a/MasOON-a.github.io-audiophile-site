@@ -1,0 +1,219 @@
+nav{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding: 2rem 12%;
+    background-color: transparent;
+    border-bottom: 1px solid hsl(0, 0%, 95%); 
+}
+.no-border{
+    border-bottom: none; 
+}
+nav .film{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: black;
+    opacity: .75;
+    z-index: 2;
+}
+nav .menu{
+    display: none;
+}
+nav .burger{
+    margin: 0 3rem 0 0;
+}
+nav .logo{
+    width: 143px;
+    position: relative;
+    left: 0;
+}
+nav .links{
+    width: fit-content;
+    margin: 0 auto;
+}
+nav .links .navbar-link{
+    color: white;
+    text-decoration: none;
+    margin: 0 2rem;
+    transition: 150ms ease;
+    opacity: .8;
+}
+nav .links .navbar-link:hover{
+    color: hsl(22deg, 65%, 57%);
+    opacity: 1;
+}
+
+
+/* Cart Styles */
+nav .cart-menu{
+    width: 500px;
+    position: absolute;
+    top: 100px;
+    right: 12%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: .25rem;
+    z-index: 2;
+}
+nav .cart-menu .cart-menu-head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+nav .cart-menu .cart-menu-head p{
+    text-decoration: underline;
+}
+nav .cart-menu .cart-menu-foot{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+nav .cart-menu .cart-menu-foot p{
+    opacity: .7;
+}
+nav .cart-menu .cart-menu-head .remove-btn{
+    text-decoration: none;
+}
+nav .cart-menu .cart-menu-head .remove-btn:hover{
+    text-decoration: underline;
+}
+
+/* Cart Item Styles */
+nav .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 15px 0;
+    overflow: hidden;
+}
+nav .cart-list .cart-empty{
+    padding: 1.5rem 0;
+    text-align: center;
+    font-weight: bold;
+}
+nav .cart-list .cart-item-img {
+    width: 70px;
+    height: 70px;
+}
+nav .cart-list .cart-item-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: .75rem;
+}
+nav .cart-item .cart-item-info {
+    padding: 0 1.5rem;
+    flex: 1;
+}
+nav .cart-list .cart-item-amount{
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 0;
+    background-color: hsl(0, 0%, 95%);
+}
+nav .cart-list .cart-item-amount h2{
+    padding: .75rem 1.5rem;
+}
+nav .cart-list .cart-item-amount div i{
+    color: hsl(0, 0%, 80%);
+    padding: .75rem 1rem;
+    transition: color 150ms ease;
+}
+nav .cart-list .cart-item-amount div i:hover{
+    color: hsl(22, 65%, 57%);
+}
+nav .cart-menu .btn1{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Mobile Menu Styles */
+nav .nav-menu{
+    width: 100vw;
+    max-width: 700px;
+    position: absolute;
+    top: 100px;
+    left: 12%;
+    z-index: 2;
+}
+nav .nav-menu .category-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: .25rem;
+    padding: 5rem 1.5rem 4rem;
+}
+nav .nav-menu .category-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: .25rem;
+    padding: 5.5rem 4rem 1rem;
+}
+nav .nav-menu .category-item .menu-thumbnail{
+    position: absolute;
+    width: 180px;
+    height: 150px;
+    transform: translateY(-130px);
+}
+nav .nav-menu .category-item .category-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: grey;
+}
+nav .nav-menu .category-item .category-link:hover p{
+    color: hsl(22, 65%, 57%);
+}
+nav .nav-menu .category-item .category-link p{
+    transition: color 150ms ease;
+    margin-right: .5rem;
+}
+
+@media screen and (max-width: 1100px){
+    nav{
+        padding: 2rem 8%;
+    }
+    nav .menu{
+        display: block;
+    }
+    nav .logo{
+        flex: 1;
+    }
+    nav .links{
+        display: none;
+    }
+    nav .cart-menu{
+        width: 95%;
+        right: 2.5%;
+        padding: 2rem;
+    }
+    nav .nav-menu{
+        left: 8%;
+    }
+}
+
+@media screen and (max-width:800px){
+    nav .nav-menu .category-container{
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 4rem 1.5rem;
+    }
+    nav .nav-menu{
+        width: unset;
+        right: 5vh;
+        left: 5vh;
+    }
+    nav .nav-menu .category-item{
+        flex-direction: column;
+        margin: 2rem 0;
+        padding: 5.5rem 2rem 1rem;
+    }
+}

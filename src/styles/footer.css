@@ -1,0 +1,111 @@
+footer{
+    background-color: black;
+    padding: 0 8% 2rem;
+}
+footer .orange-bar{
+    background-color: orange;
+    width: 150px;
+    height: 2px;
+    display: block;
+    margin: 0 auto 3rem;
+}
+footer .footer-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .footer-top img{
+    margin-bottom: 2rem;
+}
+footer .footer-top .links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem 0
+}
+footer .footer-top .links .navbar-link{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    transition: color 200ms ease;
+}
+footer .footer-top .links .navbar-link:hover{
+    color: #D87D4A;
+}
+footer .footer-text p{
+    color: white;
+    opacity: .8;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+footer .footer-bot p{
+    color: white;
+    opacity: .8;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+footer .footer-bot .icon-cont{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+footer .footer-bot .icon-cont a img{
+    transition: filter 200ms ease;
+}
+footer .footer-bot .icon-cont a:hover img{
+    filter: invert(50%) sepia(50%) saturate(2073%) hue-rotate(-20deg) brightness(88%) contrast(92%);
+}
+
+@media screen and (min-width: 600px){
+    footer .orange-bar{
+        margin: 0 0 3rem 0;
+    }
+    footer .footer-top{
+        align-items: flex-start;
+    }
+    footer .footer-top img{
+        margin-bottom: 0;
+    }
+    footer .footer-top .links{
+        flex-direction: row;
+        margin: 1.5rem 0;
+    }
+    footer .footer-top .links .navbar-link{
+        color: white;
+        margin-bottom: 0;
+        margin: 0 1rem 0 0;
+    }
+    footer .footer-text p{
+        text-align: left;
+    }
+    footer .footer-bot{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer .footer-bot .icon-cont{
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1100px){
+    footer{
+        padding: 0 12% 2rem;
+    }
+    footer .orange-bar{
+        margin: 0 0 3rem 0;
+    }
+    footer .footer-top{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer .footer-text p{
+        width: 50%;
+        text-align: left;
+    }
+    footer .footer-bot{
+        justify-content: space-between;
+    }
+}
